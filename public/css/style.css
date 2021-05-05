@@ -1,0 +1,107 @@
+html {
+    font-family:sans-serif;
+    font-size: 16px;
+    color: #fff;
+    background-color: #1d1d1d;
+    text-align: center;
+    background-image: url()
+}
+body
+a{
+    color: #80BD01;
+}
+a:hove{
+    color: rgba(128,189,1,.5);
+}
+li{
+    list-style-position: inside;
+}
+.container{
+    margin:auto;
+    padding: 1rem;
+    width: 80%;
+}
+#jade{
+    font-size: 2rem;
+    box-shadow: .25rem .25rem .5rem rgba(255, 255, 255, .25);
+    border: solid  #80BD01; 
+}
+#logo-node{
+    margin: auto;
+    height: 150px;
+    width: 450px;
+    background: transparent url('../img/node.png') no-repeat center;
+    background-size: contain;
+     border: solid  #80BD01;
+}
+.boton{
+    font-size: 2rem;
+    color: #1D1D1D;
+    background-color: #80BD01;
+}
+
+.boton:hover{
+    color: #80BD01;
+    background-color:  #1D1D1D;
+}
+.item{
+    width: 50%;
+    float: left;
+}
+.error{
+    color: red;
+}
+.poster{
+    max-width: 100px;
+    margin:auto;
+    padding: 1rem;
+    width: 80%;
+    border: solid  #80BD01; 
+}
+.table{ width: 100%;
+        border: solid  #80BD01; 
+    }
+.table td, .table th{
+     padding: 1rem;
+    
+    }
+.table tr:first-child{
+    background-color:  #292623;
+    color:  #80BD01;
+   
+
+}
+.table tr:nth-child(even) {
+    background-color: #ccc;
+   
+ 
+}
+.table tr:nth-child(odd):not(:first-child){
+    background-color:  #eee;
+}
+
+.button{
+    padding: .5rem 1rem;
+    color: #fff;
+    background-color: #80BD01;
+    cursor: pointer;
+}
+.button:hover{
+    opacity: .75;
+}
+.code{
+    background-color: #80BD01;
+    color: black;
+
+}
+.add{
+    background-color: #0B0;
+}
+.edit{
+    background-color: #0871b2;
+
+}
+.delete{
+    background-color: #d23641;
+}
+

@@ -1,0 +1,29 @@
+extends layout.pug
+
+block content
+    section.container
+        div.item.logo
+        div.item
+            h1
+                a(href="/") #{title} title
+          
+                form.form(method="post" action="/")
+                    fieldset    
+                        div.container.p1
+                            label.item.i-b.v-top.ph3.p_25.right(for="movie_id") IMDB id :
+                            input.item.i-b.v-top.ph9.p_25#movie_id(type="text", name="movie_id", required)
+                        div.container.p1
+                            label.item.i-b.v-top.ph3.p_25.right(for="title") titulo:
+                            input.item.i-b.v-top.ph9.p_25#title(type="text", name="title", required)
+                        div.container.p1
+                            label.item.i-b.v-top.ph3.p_25.right(for="release_year") anio:
+                            input.item.i-b.v-top.ph9.p_25#release_year(type="text", name="release_year", required)
+                        div.container.p1
+                            label.item.i-b.v-top.ph3.p_25.right(for="rating") Calificacion:
+                            input.item.i-b.v-top.ph9.p_25#rating(type="text", name="rating", required)
+                        div.container.p1
+                            label.item.i-b.v-top.ph3.p_25.right(for="images") Poster:
+                            input.item.i-b.v-top.ph9.p_25#images(type="text", name="images", required)
+                        div.container.p1
+                            input.button.add(type="submit", value="Agregar")
+                            

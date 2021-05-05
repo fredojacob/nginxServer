@@ -1,0 +1,32 @@
+extends layout
+
+
+block content
+
+    article#jade.container
+            h1 This page is produced by Jade engine
+            p continue desarrolllando...
+            ul  
+                li Primavera
+                ol
+                    li Abril
+                    li Mayo
+                    li Junio
+                li Verano
+                ol 
+                    li Julio
+                    li Agosto
+
+                // h2 esto es un comentario
+                h1= title
+                h2= name
+                h3 
+                    a(href="#{link}", target="_blank")= name
+                p= description
+
+    article.container
+            h2 estructura basica de jade
+            p este archivo html es generado por el motor de plantillas jade
+
+        
+    include logo
