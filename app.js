@@ -4,6 +4,7 @@ var express = require('express'),
     bodyParser = require('body-parser'),
     morgan = require('morgan'),
     jade = require('jade'),
+    ejs = require('ejs'),
     routes = require('./routes/index'),
     // necesito 3 rutas
     // primera la que necesita el modulo de favicon
@@ -16,7 +17,7 @@ var express = require('express'),
 //configurando app
 app
     .set('views', viewDIR)
-    .set('view engine', 'pug')
+    .set('view engine', 'ejs')
     .set('port', port)
 //ejecutando midleware
 app
@@ -29,3 +30,6 @@ app
     // ejecuto el midleware enrutador
     .use(routes)
 module.exports = app
+
+
+
