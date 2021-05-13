@@ -1,12 +1,15 @@
 'use strict'
-var express = require('express'),
+const express = require('express'),
     favicon = require('serve-favicon'),
     bodyParser = require('body-parser'),
     morgan = require('morgan'),
     jade = require('jade'),
     ejs = require('ejs'),
     routes = require('./routes/index'),
+
     // necesito 3 rutas
+
+    post = require('./Models/post'),
     // primera la que necesita el modulo de favicon
     faviconURL = `${__dirname}/public/img/favicon.ico`,
     //declaro la carpeta publica como un archivo statico
